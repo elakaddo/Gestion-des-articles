@@ -1,0 +1,210 @@
+
+:root{
+/*  COLORS */
+--color-primary : #ff003b;
+--color-secondary : #111;
+--color-text : #898989;
+--color-light : #f4f4f4;
+--color-util: #ff003b;
+
+
+/*  FONTS */
+--font-primary : 'Open Sans', Halvetica, Arial, sans-serif;
+--font-size-text : 13px;
+--font-size-title : 15px;
+--font-light : 400;
+--font-bold : 700;
+--font-size-section-title : 40px;
+
+
+/*  SIZE */
+--size-primary : 9px;
+--margin-primary : var(--size-primary );
+--padding-primary : var(--size-primary );
+--padding-double : 25px;
+--height-primary: 60px;
+}
+
+.Titre{
+    font-size:50px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.navbar {
+    box-shadow: 1px 0px 20x 2px black;
+    margin-bottom : 30px;
+    background-color : #eee;
+}
+
+
+
+.navbar .travel-nav-item.nav-link{
+    border-radius: 2px;
+    padding : calc(var(--padding-primary)*2) calc(var(--padding-primary)*2);
+}
+
+
+.navbar .travel-nav-item.nav-link:hover{
+    background-color: var(--color-primary);
+    color :white;
+}
+
+/* INTRODUCTION */
+.introd{
+    margin-top : 50px;
+}
+
+/* BUTTON GET STARTED */
+
+.introd .customAnchor{
+    margin-top : 40px;
+    border-radius : 5px;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+.customAnchor{
+    margin-left: 20px;
+    border-radius : 5px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.customAnchor span{
+    position: relative;
+    z-index: 2;
+}
+
+.customAnchor:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+    
+}
+
+.customAnchor:hover{
+    font-size : 19px;
+    font-weight: var(--font-light);
+    color: #fff;
+    text-decoration: none;
+}
+
+.customAnchor:hover:after{
+    width: 100%;
+}
+
+/* IMAGE */
+.image{
+    width: 100%;
+    height:300px;
+    display: flex;
+    margin-top: 30px;
+}
+
+h1{
+    font-size : 25px; 
+}
+
+/* LISF CARS IMGs */
+
+.carCard{
+    margin-top : 50px;
+    margin-left: 20px;
+    width : 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius : 40px;
+    
+}
+.carInfos{
+    margin-top : 30px;
+    margin-left : 30px;
+}
+.title{
+    color:#e9053a;
+}
+.carButtons{
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+.carButtons .btn{
+    text-decoration : none;
+}
+.carButtons .btnDel{
+    color: #cc0231;
+}
+
+.carButtons .btnDel:hover{
+    color:#9b0326;
+}
+.listofCards a{
+    font-size:15px;
+    color : gray;
+    text-decoration : none;
+}
+.listofCards a:hover{
+    color : black;
+}
+/* ABOUT PAGE */
+.developer{
+    margin-top : 50px;
+}
+.developer img{
+    border-radius : 200px;
+    border : .5px solid grey;
+    width : 250px;
+    height : 300px;
+}
+/* FOOTER */
+footer{
+    margin-top:-15px;
+    bottom: 0;
+    position: relative;
+    width : 100%;
+    height : 70px;
+    text-align: center;
+    background-color : var(--color-util);
+    color: white;
+    padding-bottom : 30px;
+    font-size:18px;
+
+    
+}
+footer a{
+    color: white;
+    text-decoration : none;
+}
+footer a:hover{
+    color: black;
+    text-decoration : none;
+}
+
